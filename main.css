@@ -1,0 +1,26 @@
+body,h1 {
+    font-family:arial;
+    font-size:18px;
+    }
+
+label{
+    width: 7em;
+    float: left;
+    text-align: right;
+    margin-right: 0.8em;
+    display: block
+    }
+
+h1 {
+    font-family:arial;
+    padding-left: 12px;
+}
+
+
+.message {
+
+    font-family:arial;
+    font-size:18px;
+    font-weight:bolder;
+    padding-left: 38px;
+}

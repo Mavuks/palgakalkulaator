@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+
+
+<br>
+<h1>Palgakalkulaator</h1>
+<br>
+<div>
+<form action="" method="POST">
+    <label for="first_value">
+        Palk
+    </label>
+    <input type="text" name="no_one" id="sum" size="5" autofocus> <a>€</a>
+    <br><br>
+
+    <input type="checkbox" name="math"  onclick="reset_msg();" class="group1" checked/>Tööandja kulu
+
+    <input type="checkbox" name="math" onclick="reset_msg();" class="group1"/>Brutopalk
+
+    <input type="checkbox" name="math" onclick="reset_msg();" class="group1"  />Netopak
+
+    <br><br>
+
+    <!-- <div><input type="checkbox" name="math" onclick="reset_msg();"/>Tulumaksuvaba 500€</div>
+    <br><br> -->
+</label>
+    <input type="submit" value="Arvuta" onclick="return solve();"/>
+
+    <input type="submit" value="Puhasta" onclick="return clear_msg();"/>
+    <br><br>
+    <div id="palk">
+
+        <a class='message'> Tööandja kulu:</a>
+        <br></br>
+        <a class='message'> Bruto:</a>
+        <br></br>
+        <a class='message'> Neto: </a>
+
+    </div>
+
+</form>
+</div>
+
+<script src="app.js" async defer>
+
+
+</script>
+</body>
+</html>
