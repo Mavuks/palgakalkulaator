@@ -22,31 +22,32 @@
     <label for="first_value">
         Palk
     </label>
-    <input type="text" name="no_one" id="sum" size="5" autofocus> <a>€</a>
+    <input type="text" name="no_one" id="summa" size="5" autofocus> <a>€</a>
+    <br><br>
+    <label>
+    <input type="radio" name="math" checked>Tööandja kulu
+    </label>
+    <label>
+    <input type="radio" name="math" />Brutopalk
+    </label>
+    <label>
+    <input type="radio" name="math" />Netopalk
+    </label>
     <br><br>
 
-    <input type="checkbox" name="math"  onclick="reset_msg();" class="group1" checked/>Tööandja kulu
 
-    <input type="checkbox" name="math" onclick="reset_msg();" class="group1"/>Brutopalk
-
-    <input type="checkbox" name="math" onclick="reset_msg();" class="group1"  />Netopak
-
-    <br><br>
-
-    <!-- <div><input type="checkbox" name="math" onclick="reset_msg();"/>Tulumaksuvaba 500€</div>
-    <br><br> -->
 </label>
     <input type="submit" value="Arvuta" onclick="return solve();"/>
 
-    <input type="submit" value="Puhasta" onclick="return clear_msg();"/>
+    <input type="submit" value="Puhasta" onclick="clear_msg();"/>
     <br><br>
-    <div id="palk">
+    <div>
 
-        <a class='message'> Tööandja kulu:</a>
-        <br></br>
-        <a class='message'> Bruto:</a>
-        <br></br>
-        <a class='message'> Neto: </a>
+        <p class='message' > Tööandja kulu: <span id="tooandja"> </p>
+
+        <p class='message'> Bruto: <span id="bruto"></p>
+
+        <p class='message'> Neto:  <span id="neto"></p>
 
     </div>
 
