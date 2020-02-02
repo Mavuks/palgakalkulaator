@@ -1,7 +1,8 @@
 function clear_msg() {
-    document.getElementById('msg').innerHTML = "";
+    document.getElementById('neto').innerHTML = "";
+    document.getElementById('bruto').innerHTML = "";
+    document.getElementById('tooandja').innerHTML = "";
     summa = "";
-    summa.focus();
 }
 
 function solve() {
